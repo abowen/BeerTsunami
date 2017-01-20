@@ -8,16 +8,16 @@ public class Player : MonoBehaviour
 {
 
     private Rigidbody _rigidBody;
-    // private Text _voiceText;
+    private Text _voiceText;
 
     // Use this for initialization
     void Start()
     {
         print("Parent GameObject: " + gameObject.name);
         _rigidBody = gameObject.GetComponent<Rigidbody>();
-        // _voiceText = gameObject.GetComponentInChildren<Text>();
+        _voiceText = gameObject.GetComponentInChildren<Text>();
 
-        // print("Voice Text: " + _voiceText.name);
+        print("Voice Text: " + _voiceText.name);
     }
 
     // Update is called once per frame
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             print("space pressed");
-            // _voiceText.text = "Wanker!";
+            _voiceText.text = "Wanker!";
         }
 
         var movement = new Vector3(_rigidBody.position.x + xDirection, 0, _rigidBody.position.z + yDirection);
