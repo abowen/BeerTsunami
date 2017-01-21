@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54528998544591046}
   - component: {fileID: 114441773067436256}
   - component: {fileID: 114332843361965812}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bogan
   m_TagString: Bogan
   m_Icon: {fileID: 0}
