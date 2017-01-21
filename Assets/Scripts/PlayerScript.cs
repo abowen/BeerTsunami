@@ -7,7 +7,7 @@ using System.Linq;
 public class PlayerScript : MonoBehaviour
 {
     public int PlayerNumber = 1;
-    public float Speed = 1;
+    public float Speed = 10f;
 
     private Rigidbody _rigidBody;
     private Text _voiceText;
@@ -63,7 +63,8 @@ public class PlayerScript : MonoBehaviour
             _voiceText.text = "Wanker!";
         }
 
-        var movement = new Vector3(_rigidBody.position.x + xDirection, 0, _rigidBody.position.z + yDirection);
-        _rigidBody.MovePosition(movement);
+        var movement = new Vector3(xDirection, 0, yDirection).normalized * Speed * Time.deltaTime;
+        var newPosition = _rigidBody.position += movement;
+        _rigidBody.MovePosition(newPosition);
     }
 }
