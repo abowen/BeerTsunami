@@ -10,11 +10,9 @@ public class FindNearestPlayer : MonoBehaviour {
 
     void Start ()
     {
-        https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
         if (_players == null)
         {
-            _players = GameObject.FindGameObjectsWithTag("Player");
-            _playerTransforms = _players.Select(p => p.transform).ToArray();
+            _players = GameObject.FindGameObjectsWithTag("Player");            
         }                    
     }
 
@@ -25,21 +23,22 @@ public class FindNearestPlayer : MonoBehaviour {
         print("Closest Player: " + closestPlayer.name);
 	}
 
-    // https://forum.unity3d.com/threads/clean-est-way-to-find-nearest-object-of-many-c.44315/
-    Transform GetClosestPlayer()
-    {
-        Transform closestPlayer = null;
-        float minDistance = Mathf.Infinity;
-        Vector3 currentPos = transform.position;
-        foreach (var player in _playerTransforms)
+    // https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
+    GameObject GetClosestPlayer()
+    {                
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject player in _players)
         {
-            float distance = Vector3.Distance(player.position, currentPos);
-            if (distance < minDistance)
+            Vector3 diff = player.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
             {
-                closestPlayer = player;
-                minDistance = distance;
+                closest = player;
+                distance = curDistance;
             }
         }
-        return closestPlayer;
+        return closest;
     }
 }

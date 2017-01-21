@@ -6,6 +6,7 @@ using System.Linq;
 
 public class Player : MonoBehaviour
 {
+    public int PlayerNumber = 1;
 
     private Rigidbody _rigidBody;
     private Text _voiceText;
@@ -31,20 +32,24 @@ public class Player : MonoBehaviour
         var xDirection = 0;
         var yDirection = 0;
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if ((Input.GetKey(KeyCode.W) && PlayerNumber == 1) ||
+             Input.GetKey(KeyCode.UpArrow) && PlayerNumber == 2)
         {
             xDirection = 1;
         }
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        else if ((Input.GetKey(KeyCode.S) && PlayerNumber == 1) ||
+             Input.GetKey(KeyCode.DownArrow) && PlayerNumber == 2)
         {
             xDirection = -1;
         }
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if ((Input.GetKey(KeyCode.A) && PlayerNumber == 1) ||
+             Input.GetKey(KeyCode.LeftArrow) && PlayerNumber == 2)
         {
             yDirection = 1;
         }
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        else if ((Input.GetKey(KeyCode.D) && PlayerNumber == 1) ||
+             Input.GetKey(KeyCode.RightArrow) && PlayerNumber == 2)
         {
             yDirection = -1;
         }
