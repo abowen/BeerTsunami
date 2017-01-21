@@ -18,9 +18,12 @@ public class PlayerScript : MonoBehaviour
     public Transform BBQSpawn;
     public int NumberOfBBQs = 10;
 
+    private PlayerInputButtonKeys _inputButtonKeys;
+
     // Use this for initialization
     void Start()
     {
+        _inputButtonKeys = PlayerInputButtonKeys.CreateForPlayer(PlayerNumber);
         print("Parent GameObject: " + gameObject.name);
         _rigidBody = gameObject.GetComponent<Rigidbody>();
         _voiceText = gameObject.GetComponentInChildren<Text>();
@@ -32,7 +35,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         time = time + Time.deltaTime;
-        if (Input.GetButton(InputButtonNames.PlaceBBQKey) && NumberOfBBQs > 0 && time > _nextBBQ)
+        if (Input.GetButton(_inputButtonKeys.DropBBQKey) && NumberOfBBQs > 0 && time > _nextBBQ)
         {
             _nextBBQ = _timeBetweenBBQ + time;
             NumberOfBBQs -= 1;

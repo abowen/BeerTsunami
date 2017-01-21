@@ -1,12 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Assets.Scripts
+﻿namespace Assets.Scripts
 {
-    public static class InputButtonNames
+    public class PlayerInputButtonKeys
     {
-        public const string PlaceBBQKey = "DropBBQ";
+        private PlayerInputButtonKeys()
+        {
+        }
+
+        public static PlayerInputButtonKeys CreateForPlayer(int playerNumber)
+        {
+            var inputButtonKeys = new PlayerInputButtonKeys();
+
+            if (playerNumber == 1)
+            {
+                inputButtonKeys.DropBBQKey = "DropBBQPlayer1";
+            }
+            else
+            {
+                inputButtonKeys.DropBBQKey = "DropBBQPlayer2";
+            }
+
+            return inputButtonKeys;
+        }
+
+        public string DropBBQKey { get; set; }
     }
 }
