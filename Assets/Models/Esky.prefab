@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33755693155174270}
   - component: {fileID: 65056353653193958}
   - component: {fileID: 23738325576220940}
+  - component: {fileID: 54791923523670150}
   m_Layer: 0
   m_Name: Bottom
   m_TagString: Untagged
@@ -40,6 +41,7 @@ GameObject:
   - component: {fileID: 33612307038804136}
   - component: {fileID: 65833198920042726}
   - component: {fileID: 23625496843021176}
+  - component: {fileID: 54395727992835046}
   m_Layer: 0
   m_Name: Lid
   m_TagString: Untagged
@@ -179,6 +181,36 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1105325633585980}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54395727992835046
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1253838364043008}
+  serializedVersion: 2
+  m_Mass: 0.2
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &54791923523670150
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1105325633585980}
+  serializedVersion: 2
+  m_Mass: 0.5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65056353653193958
 BoxCollider:
   m_ObjectHideFlags: 1
