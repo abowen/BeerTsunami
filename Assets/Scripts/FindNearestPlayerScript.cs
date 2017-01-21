@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class FindNearestPlayer : MonoBehaviour {
+public class FindNearestPlayerScript : MonoBehaviour {
+
+    public GameObject ClosestPlayer;
 
     private GameObject[] _players;
     private Transform[] _playerTransforms;
@@ -18,9 +20,9 @@ public class FindNearestPlayer : MonoBehaviour {
 
     // Update is called once per frame
     void Update ()
-    {        
-        var closestPlayer = GetClosestPlayer();
-        print("Closest Player: " + closestPlayer.name);
+    {
+        ClosestPlayer = GetClosestPlayer();
+        // print("Closest Player: " + closestPlayer.name);
 	}
 
     // https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html

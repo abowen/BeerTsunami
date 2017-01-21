@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 65633517398828138}
   - component: {fileID: 23601189215738072}
   - component: {fileID: 54528998544591046}
+  - component: {fileID: 114441773067436256}
+  - component: {fileID: 114332843361965812}
   m_Layer: 0
   m_Name: Bogan
   m_TagString: Bogan
@@ -108,3 +110,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114332843361965812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509952159890000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9637cab40fe6043bf20d3bd7378fb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinimumDistance: 1
+  MaximumDistance: 100
+  Speed: 1
+--- !u!114 &114441773067436256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509952159890000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6d67cc79bcb444ebaabb3583063f55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClosestPlayer: {fileID: 0}

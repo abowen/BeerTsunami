@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
-public class Player : MonoBehaviour
+public class PlayerScript : MonoBehaviour
 {
     public int PlayerNumber = 1;
 
