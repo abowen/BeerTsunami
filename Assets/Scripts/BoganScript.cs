@@ -9,14 +9,16 @@ public class BoganScript : MonoBehaviour
     public float Speed = 1;
 
     private FindNearestPlayerScript _nearestPlayerScript;
+    private Rigidbody _rigidBody;
 
     void Start()
     {
         // https://docs.unity3d.com/Manual/ControllingGameObjectsComponents.html        
         _nearestPlayerScript = gameObject.GetComponent<FindNearestPlayerScript>();
+        _rigidBody = gameObject.GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (_nearestPlayerScript == null || _nearestPlayerScript.ClosestPlayer == null)
         {
@@ -31,7 +33,7 @@ public class BoganScript : MonoBehaviour
         if (distance >= MinimumDistance &&
             distance <= MaximumDistance)
         {
-            transform.position += transform.forward * Speed * Time.deltaTime;
+            _rigidBody.MovePosition(transform.position += transform.forward * Speed * Time.deltaTime);
         }
 
         // TODO: Could do certain things like:

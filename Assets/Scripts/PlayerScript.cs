@@ -7,6 +7,7 @@ using System.Linq;
 public class PlayerScript : MonoBehaviour
 {
     public int PlayerNumber = 1;
+    public float Speed = 1;
 
     private Rigidbody _rigidBody;
     private Text _voiceText;
@@ -54,9 +55,11 @@ public class PlayerScript : MonoBehaviour
             yDirection = -1;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if ((Input.GetKey(KeyCode.Space) && PlayerNumber == 1) ||
+            Input.GetKey(KeyCode.Return) && PlayerNumber == 2)
         {
             print("space pressed");
+            // TODO: Replace with dictionary of colloquial terms
             _voiceText.text = "Wanker!";
         }
 

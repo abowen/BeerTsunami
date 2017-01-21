@@ -8,7 +8,6 @@ public class FindNearestPlayerScript : MonoBehaviour {
     public GameObject ClosestPlayer;
 
     private GameObject[] _players;
-    private Transform[] _playerTransforms;
 
     void Start ()
     {
@@ -35,6 +34,7 @@ public class FindNearestPlayerScript : MonoBehaviour {
         {
             Vector3 diff = player.transform.position - position;
             float curDistance = diff.sqrMagnitude;
+            // TODO: Could perform different comparison here, e.g. Who has yelled the most, or knocked over BBQ
             if (curDistance < distance)
             {
                 closest = player;
@@ -42,5 +42,5 @@ public class FindNearestPlayerScript : MonoBehaviour {
             }
         }
         return closest;
-    }
+    }    
 }
