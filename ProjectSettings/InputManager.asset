@@ -202,7 +202,7 @@ InputManager:
     descriptiveName: Drops a BBQ
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 
+    positiveButton: right ctrl
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
