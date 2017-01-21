@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
+using Assets.Scripts;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -11,6 +9,14 @@ public class PlayerScript : MonoBehaviour
 
     private Rigidbody _rigidBody;
     private Text _voiceText;
+
+    private float _nextBBQ = 0.5f;
+    private float _timeBetweenBBQ = 2f;
+    private float time = 0;
+
+    public GameObject BBQ;
+    public Transform BBQSpawn;
+    public int NumberOfBBQs = 10;
 
     // Use this for initialization
     void Start()
@@ -25,7 +31,13 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        time = time + Time.deltaTime;
+        if (Input.GetButton(InputButtonNames.PlaceBBQKey) && NumberOfBBQs > 0 && time > _nextBBQ)
+        {
+            _nextBBQ = _timeBetweenBBQ + time;
+            NumberOfBBQs -= 1;
+            Instantiate(BBQ, BBQSpawn.position, BBQSpawn.rotation);
+        }
     }
 
     void FixedUpdate()
@@ -68,3 +80,4 @@ public class PlayerScript : MonoBehaviour
         _rigidBody.MovePosition(newPosition);
     }
 }
+ 
