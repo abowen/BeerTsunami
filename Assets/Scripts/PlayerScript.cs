@@ -72,6 +72,8 @@ public class PlayerScript : MonoBehaviour
         {
             print("space pressed");
             // TODO: Replace with dictionary of colloquial terms
+            //_rigidBody.AddForce(new Vector3())
+            _rigidBody.AddTorque(0, 50, 0);
             _voiceText.text = "Wanker!";
         }
 
