@@ -130,6 +130,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1812852417815248, guid: 4510e31e7ee19854dae32ca61674ad60, type: 2}
+      propertyPath: m_Name
+      value: Player 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4510e31e7ee19854dae32ca61674ad60, type: 2}
   m_IsPrefabParent: 0
@@ -212,11 +216,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4563555029280594, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 22.339554
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4563555029280594, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -13.5721245
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4563555029280594, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -244,7 +248,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1509952159890000, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
       propertyPath: m_Name
-      value: Bogan (1)
+      value: Bogan 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
@@ -345,11 +349,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4563555029280594, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.339555
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4563555029280594, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -13.5721245
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4563555029280594, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -374,6 +378,10 @@ Prefab:
     - target: {fileID: 4563555029280594, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509952159890000, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
+      propertyPath: m_Name
+      value: Bogan 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2e83ca1fde0a3246957d699c701f0c9, type: 2}
@@ -419,7 +427,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1812852417815248, guid: 4510e31e7ee19854dae32ca61674ad60, type: 2}
       propertyPath: m_Name
-      value: Player (1)
+      value: Player 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4510e31e7ee19854dae32ca61674ad60, type: 2}

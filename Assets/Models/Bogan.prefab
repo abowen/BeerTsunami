@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54528998544591046}
   m_Layer: 0
   m_Name: Bogan
-  m_TagString: Untagged
+  m_TagString: Bogan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
