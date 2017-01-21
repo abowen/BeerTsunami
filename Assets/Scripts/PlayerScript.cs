@@ -8,7 +8,9 @@ public class PlayerScript : MonoBehaviour
     public float Speed = 10f;
 
     private Rigidbody _rigidBody;
+
     private Text _voiceText;
+    private string[] _text = new[] { "You bogan", "Wanker", "Arsehole", "Get a job!", "Truckie", "Dole bludger", "Peasant", "Inbred", "Dero", "Dog", "Mug", "Piker", "Drop out", "Sook", "Wuss" };
 
     private float _nextBBQ = 0.5f;
     private float _timeBetweenBBQ = 2f;
@@ -18,6 +20,7 @@ public class PlayerScript : MonoBehaviour
     public Transform BBQSpawn;
     public int NumberOfBBQs = 10;
 
+    // Use this for initialization
     private PlayerInputButtonKeys _inputButtonKeys;
 
     // Use this for initialization
@@ -41,6 +44,13 @@ public class PlayerScript : MonoBehaviour
             NumberOfBBQs -= 1;
             Instantiate(BBQ, BBQSpawn.position, BBQSpawn.rotation);
         }
+    }
+
+    private string GetRandomInsult()
+    {
+        https://docs.unity3d.com/ScriptReference/Random.Range.html
+        var insultIndex = Random.Range(0, _text.Length);
+        return _text[insultIndex];
     }
 
     void FixedUpdate()
@@ -75,7 +85,9 @@ public class PlayerScript : MonoBehaviour
         {
             print("space pressed");
             // TODO: Replace with dictionary of colloquial terms
-            _voiceText.text = "Wanker!";
+            //_rigidBody.AddForce(new Vector3())
+            _rigidBody.AddTorque(0, 50, 0);
+            _voiceText.text = GetRandomInsult();
         }
 
         var movement = new Vector3(xDirection, 0, yDirection).normalized * Speed * Time.deltaTime;
