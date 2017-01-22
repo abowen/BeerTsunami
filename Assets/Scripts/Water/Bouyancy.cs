@@ -11,6 +11,7 @@ public class Bouyancy : MonoBehaviour {
     private void Start()
     {
         water = GameObject.FindGameObjectsWithTag(TagNames.Water).FirstOrDefault();
+        print("water: " + water.name);
     }
     void OnTriggerEnter(Collider other)
     {
