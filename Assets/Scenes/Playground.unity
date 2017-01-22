@@ -404,6 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288e6acee2123234cac13f7ab4776a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!1 &270836428
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,6 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288e6acee2123234cac13f7ab4776a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!54 &270836431
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -824,8 +826,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 639794489}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 5.4, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 40}
+  m_LocalPosition: {x: -5, y: 2.4, z: 0}
+  m_LocalScale: {x: 10, y: 5, z: 40}
   m_Children: []
   m_Father: {fileID: 1403911431}
   m_RootOrder: 3
@@ -906,6 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288e6acee2123234cac13f7ab4776a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!1001 &659708620
 Prefab:
   m_ObjectHideFlags: 0
@@ -1430,6 +1433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288e6acee2123234cac13f7ab4776a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!54 &1096615653
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2368,7 +2372,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4925954501121128, guid: 8de3485c78665804ea0d242029efad0b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 80
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4925954501121128, guid: 8de3485c78665804ea0d242029efad0b, type: 2}
       propertyPath: m_LocalPosition.y
