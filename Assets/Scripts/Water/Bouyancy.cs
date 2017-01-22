@@ -6,11 +6,11 @@ public class Bouyancy : MonoBehaviour {
 
     public int BouyancyModifier = 50;
     private bool _isInWater = false;
-    private Transform water;
+    private GameObject water;
 
     private void Start()
     {
-        water = GameObject.FindGameObjectsWithTag(TagNames.Water).First().transform;
+        water = GameObject.FindGameObjectsWithTag(TagNames.Water).FirstOrDefault();
     }
     void OnTriggerEnter(Collider other)
     {
@@ -30,9 +30,9 @@ public class Bouyancy : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (_isInWater)
+        if (_isInWater && water)
         {
-            var deltaY = water.position.y - transform.position.y;
+            var deltaY = water.transform.position.y - transform.position.y;
             var rigidBody = GetComponent<Rigidbody>();
             var calc = deltaY * BouyancyModifier;
 
