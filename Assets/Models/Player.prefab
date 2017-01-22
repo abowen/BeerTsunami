@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 23377966428478236}
   - component: {fileID: 54302017748048490}
   - component: {fileID: 114857555098931852}
+  - component: {fileID: 114371740511409340}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -87,8 +88,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1812852417815248}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.1276576, z: -0, w: 0.9918183}
+  m_LocalPosition: {x: 31.309225, y: -138.36128, z: 14.00024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224495065525204488}
@@ -162,6 +163,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &114371740511409340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1812852417815248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4629ed49cbfd5954bb14457af6059599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouyancyModifier: 50
 --- !u!114 &114440622883091420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -247,7 +260,7 @@ MonoBehaviour:
   Speed: 10
   BBQ: {fileID: 1916654958148168, guid: 7b12045d52f9145468577df8230b8d4a, type: 2}
   BBQSpawn: {fileID: 4144224516386610}
-  NumberOfBBQs: 10
+  NumberOfBBQs: 8
 --- !u!136 &136544095796817502
 CapsuleCollider:
   m_ObjectHideFlags: 1

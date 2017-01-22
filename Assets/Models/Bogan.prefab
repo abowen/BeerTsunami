@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54528998544591046}
   - component: {fileID: 114441773067436256}
   - component: {fileID: 114332843361965812}
+  - component: {fileID: 114914061067350058}
   m_Layer: 8
   m_Name: Bogan
   m_TagString: Bogan
@@ -38,8 +39,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509952159890000}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalRotation: {x: -0.6473318, y: -0.27359495, z: -0.26903915, w: 0.6585782}
+  m_LocalPosition: {x: 0, y: -9388.762, z: -2}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -136,3 +137,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClosestPlayer: {fileID: 0}
+--- !u!114 &114914061067350058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509952159890000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4629ed49cbfd5954bb14457af6059599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouyancyModifier: 50

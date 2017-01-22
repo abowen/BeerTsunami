@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 114078521781812126}
   - component: {fileID: 114225554075525968}
   - component: {fileID: 114065507523033108}
+  - component: {fileID: 114060113064396298}
   m_Layer: 8
   m_Name: Player_beardy
   m_TagString: Player
@@ -859,8 +860,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1162909564494246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.08, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.9, z: -4.78}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 224906717530342510}
   - {fileID: 4605207211889436}
@@ -1733,6 +1734,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!114 &114060113064396298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1162909564494246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4629ed49cbfd5954bb14457af6059599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouyancyModifier: 50
 --- !u!114 &114065507523033108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1759,6 +1772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerNumber: 1
 --- !u!114 &114225554075525968
 MonoBehaviour:
   m_ObjectHideFlags: 1

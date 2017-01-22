@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts;
+using UnityEngine;
 using UnityEngine.UI;
-using Assets.Scripts;
 
 public class PlayerScript : MonoBehaviour
 {
