@@ -17,4 +17,12 @@ public class ExpandingWaveScript : MonoBehaviour {
         gameObject.transform.localScale += new Vector3(0.02f * Speed, 0, 0);
         gameObject.transform.position += new Vector3(0.01f * Speed, 0, 0);
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }

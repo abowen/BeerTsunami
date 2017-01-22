@@ -707,6 +707,11 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 54302017748048490, guid: 4510e31e7ee19854dae32ca61674ad60,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4510e31e7ee19854dae32ca61674ad60, type: 2}
   m_IsPrefabParent: 0
@@ -809,6 +814,7 @@ GameObject:
   - component: {fileID: 639794490}
   - component: {fileID: 639794494}
   - component: {fileID: 639794493}
+  - component: {fileID: 639794496}
   - component: {fileID: 639794492}
   - component: {fileID: 639794491}
   - component: {fileID: 639794495}
@@ -909,6 +915,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2
+--- !u!65 &639794496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 639794489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.05, y: 0.1, z: 0}
 --- !u!1001 &659708620
 Prefab:
   m_ObjectHideFlags: 0
@@ -3133,6 +3151,11 @@ Prefab:
     - target: {fileID: 4095107688786966, guid: 4510e31e7ee19854dae32ca61674ad60, type: 2}
       propertyPath: m_LocalPosition.z
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 54302017748048490, guid: 4510e31e7ee19854dae32ca61674ad60,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4510e31e7ee19854dae32ca61674ad60, type: 2}
