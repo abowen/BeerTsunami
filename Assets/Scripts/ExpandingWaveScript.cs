@@ -12,11 +12,11 @@ public class ExpandingWaveScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
+	void Update () {        
         gameObject.transform.localScale += new Vector3(0.02f * Speed, 0, 0);
         gameObject.transform.position += new Vector3(0.01f * Speed, 0, 0);
-	}
+        Camera.main.transform.position += new Vector3(0.005f * Speed, 0, 0);
+    }
 
     void OnTriggerEnter(Collider other)
     {
